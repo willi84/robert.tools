@@ -1,11 +1,13 @@
 
 ## file system
-```src/
-  frontend/
-  backend/
-    apps/
-    _shared/
-      
+```
+  src/
+    frontend/
+    backend/
+      apps/
+        _shared/
+  api/
+  middleware.ts 
 ```
 
 ## dependencies
@@ -41,3 +43,6 @@
 * run the app with `npm run start_app <app-name>` (e.g. `npm run start_app test`)
 * create a build task entry in `package.json` for the app (e.g. `"build:api": "npm run build_app -- api"`)
 * for production build, run `npm run build_app <app-name>` (e.g. `npm run build_app test`)
+
+## API
+Under the `api/` folder, you can create serverless functions that will be deployed to Vercel. It also contains a custom tsconfig file for the API functions to avoid issues not using `type: module` in the `package.json`.

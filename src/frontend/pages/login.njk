@@ -1,0 +1,36 @@
+---
+title: Login
+permalink: /login/index.html
+---
+
+<h1>🔐 Login</h1>
+
+<p id="error" hidden>
+  Passwort ist falsch.
+</p>
+
+<form method="post" action="/api/login">
+  <input
+    type="password"
+    name="password"
+    placeholder="Passwort"
+    required
+    autofocus
+  >
+
+  <button type="submit">
+    Login
+  </button>
+</form>
+
+<script>
+  if (location.hostname === 'localhost') {
+    form.action =
+      'https://robert-tools.vercel.app/api/login';
+  }
+  const params = new URLSearchParams(location.search);
+
+  if (params.has('error')) {
+    document.querySelector('#error').hidden = false;
+  }
+</script>
