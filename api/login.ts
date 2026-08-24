@@ -83,12 +83,17 @@ export default {
       );
     }
 
-    return new Response(null, {
-      status: 302,
-      headers: {
-        Location: '/private/',
-        'Set-Cookie': cookie,
-      },
-    });
+    return Response.json(
+        {
+            success: true,
+        },
+        {
+            status: 200,
+            headers: {
+            ...corsHeaders,
+            'Set-Cookie': cookie,
+            },
+        },
+    );
   },
 };
