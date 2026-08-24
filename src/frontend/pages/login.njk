@@ -24,13 +24,37 @@ permalink: /login/index.html
 </form>
 
 <script>
-  if (location.hostname === 'localhost') {
-    form.action =
-      'https://robert-tools.vercel.app/api/login';
+  const form = document.querySelector('form');
+  console.log('location.hostname');
+  console.log(location.hostname);
+  const isLocal = location.hostname === 'localhost'
+  const target = isLocal ? 'https://robert-tools.vercel.app/api/login' : '/api/login';
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+
+
+    const response = await fetch(
+      target,
+      {
+        method: 'POST',
+        body: new FormData(form),
+        credentials: 'include'
+      }
+    );
+    const result = await response.json();
+
+  if (result.success) {
+    console.log('✅ Login erfolgreich');
   }
+
+  });
+
   const params = new URLSearchParams(location.search);
 
   if (params.has('error')) {
     document.querySelector('#error').hidden = false;
   }
+
+
 </script>
