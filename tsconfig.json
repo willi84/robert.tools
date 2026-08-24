@@ -16,5 +16,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./src", "jest.d.ts", "eslint.config.cjs", "vite.config.ts"]
+  "include": ["./src", "./api", "jest.d.ts", "eslint.config.cjs", "vite.config.ts"]
 }
