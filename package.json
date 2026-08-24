@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-nunjucks-template",
+  "name": "robert.tools",
   "version": "1.0.0",
   "description": "my website",
   "main": "index.html",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willi84/eleventy-nunjucks-template.git"
+    "url": "git+https://github.com/willi84/robert.tools.git"
   },
   "keywords": [
     "website",
@@ -34,9 +34,9 @@
   "author": "Robert Willemelis",
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/willi84/eleventy-nunjucks-template/issues"
+    "url": "https://github.com/willi84/robert.tools/issues"
   },
-  "homepage": "https://github.com/willi84/eleventy-nunjucks-template#readme",
+  "homepage": "https://github.com/willi84/robert.tools#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@types/jest": "^29.5.3",

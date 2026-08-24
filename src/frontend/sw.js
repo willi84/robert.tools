@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eleventy-nunjucks-template-v1';
+const CACHE_NAME = 'robert.tools-v1';
 const CORE_ASSETS = ['/', '/manifest.webmanifest', '/assets/logo.svg', '/assets/logo.jpg'];
 
 self.addEventListener('install', (event) => {

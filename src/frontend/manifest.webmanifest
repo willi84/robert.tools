@@ -1,6 +1,6 @@
 {
-    "name": "eleventy-nunjucks-template",
-    "short_name": "eleventynunjuckstemplate",
+    "name": "robert.tools",
+    "short_name": "roberttools",
     "start_url": "/",
     "scope": "/",
     "display": "standalone",

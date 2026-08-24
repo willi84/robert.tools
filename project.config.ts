@@ -30,11 +30,11 @@ const hostnameDev = 'localhost';
 const portVite = 3000;
 const hostVite = `http://${hostnameDev}:${portVite}`;
 
-const projectSlug = 'eleventy-nunjucks-template';
+const projectSlug = 'robert.tools';
 const logo = 'logo.svg';
 const menuIcon = 'burger.svg';
-const projectName = 'eleventy-nunjucks-template';
-const configId = 'eleventynunjuckstemplate';
+const projectName = 'robert.tools';
+const configId = 'roberttools';
 
 // source → dist pairs (authoring format)
 const staticAssetsAuthoring: Array<{ src: string; dist: string }> = [
