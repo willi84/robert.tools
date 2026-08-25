@@ -12,7 +12,7 @@ export default function middleware(request: Request) {
     }
 
     const cookies = request.headers.get('cookie') ?? '';
-    const token = process.env.LOGIN_TOKEN;
+    const token = process.env.RT_AUTH_SECRET;
 
     const authenticated =
         cookies.includes(`auth=${token}`) && token !== undefined;

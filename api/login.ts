@@ -60,7 +60,7 @@ export default {
     }
 
     const cookie = [
-      `auth=${process.env.RT_AUTH_TOKEN}`,
+      `auth=${process.env.RT_AUTH_SECRET}`,
       'Path=/',
       'HttpOnly',
       'Secure',
