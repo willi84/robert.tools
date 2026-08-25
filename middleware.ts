@@ -12,9 +12,10 @@ export default function middleware(request: Request) {
     }
 
     const cookies = request.headers.get('cookie') ?? '';
+    const token = process.env.LOGIN_TOKEN;
 
     const authenticated =
-        cookies.includes(`auth=${process.env.LOGIN_TOKEN}`);
+        cookies.includes(`auth=${token}`) && token !== undefined;
 
     if (!authenticated) {
         return Response.redirect(
