@@ -10,17 +10,15 @@
     "links": [
         {
             "text": "Github",
-            "url": "https://github.com/willi84/",
+            "url": "https://github.com/orgs/robert-tools/repositories",
             "target": "_blank",
-            "image_before": "github.svg",
             "size": [20,20],
             "type": "button"
         },
         {
-            "text": "LinkedIn",
-            "url": "https://de.linkedin.com/in/robertwillemelis",
+            "text": "NPM",
+            "url": "https://www.npmjs.com/search?q=%40robert.tools",
             "target": "_blank",
-            "image_before": "linkedin.svg",
             "size": [20,20],
             "type": "button"
         }
